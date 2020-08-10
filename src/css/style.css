@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: blue;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App h1 {
+  padding: 20px;
+  color: #000099;
+}
+
+.quoteBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9999ff;
+  width: 70%;
+  border-radius: 5px;
+  padding: 20px;
+  color: #000099;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  background-color: white;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#author {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 30px;
+}
+
+#text {
+  font-size: 20px;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */
