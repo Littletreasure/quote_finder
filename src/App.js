@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
-import $ from "jquery";
 import "./css/style.css";
+import $ from "jquery";
+import jQuery from "jquery";
+window.jQuery = jQuery;
+require("jquery-color");
 
 class App extends Component {
   state = {
@@ -38,15 +41,10 @@ class App extends Component {
       Math.floor(Math.random() * this.state.colours.length)
     ];
     this.getQuote();
-    $(".quote")
-      .css({ color: colour })
-      .animate({ opacity: 0 }, 0, function () {
-        $(this).animate({ opacity: 1 }, 1000);
-      });
-    $(".button").css({ backgroundColor: colour });
-    $("#body")
-      .css({ backgroundColor: colour })
-      .animate({ backgroundColor: colour }, 1000);
+    $(".quote").animate({ opacity: 0, color: colour }, 0, function () {
+      $(this).animate({ opacity: 1 }, 1000);
+    });
+    $("#body, .button").animate({ backgroundColor: colour }, 1200);
   };
 
   render() {
