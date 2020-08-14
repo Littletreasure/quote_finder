@@ -1,4 +1,6 @@
-This project was created to practice some new concepts including Sass and jquery and how to implement jquery in React.
+This project was based on a project on [freeCodeCamp](https://www.freecodecamp.org/)
+
+It was created to practice some new concepts including Sass and jquery and how to implement jquery in React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
